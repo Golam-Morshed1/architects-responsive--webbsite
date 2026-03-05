@@ -1,29 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-.work-sans-font{
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+.work-sans-font {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
 }
 
 /* Shared styles */
-.display-flex{
+.display-flex {
     display: flex;
 }
+
 /* dakr-02 */
-.text-gray{
+.text-gray {
     color: #424242;
 }
+
 /* dark-03 */
-.text-light-gray{
+.text-light-gray {
     color: #727272;
 }
 
-.bg-light{
+.bg-light {
     background-color: rgba(255, 144, 14, 0.1);
 }
-.btn-primary{
+
+.btn-primary {
     background-color: #FF900E;
     color: white;
     padding: 20px 25px;
@@ -32,48 +39,123 @@
     border-radius: 8px;
     border: none;
 }
+
 /* header style */
 
 /* Nav related styles */
-.navbar{
+.navbar {
     justify-content: space-between;
     align-items: center;
 }
-.brand{
+
+.brand {
     font-weight: 700;
     font-size: 3rem;
 }
-.banner, .navbar{
+
+.banner,
+.navbar {
     max-width: 1440px;
     margin: 0 auto;
 }
-.nav-item{
+
+.nav-item {
     list-style: none;
 }
-.nav-link{
+
+.nav-link {
     text-decoration: none;
     margin-right: 30px;
 }
 
 /* banner related style */
 
-.banner-content{
+.banner-content {
     max-width: 850px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 50px;
 }
-.banner-title{
+
+.banner-title {
     font-weight: 700;
     font-size: 4rem;
 }
-.banner-img{
+
+.banner-img {
     width: 100%;
 }
 
+/* main sytles */
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main>section {
+    margin-top: 130px;
+}
+
+/* Team-section */
+
+.Team-section {
+    align-items: center;
+}
+
+.teams-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.features-contaner {
+    margin-left: 73px;
+    max-width: 534px;
+}
+
+.features-title {
+    font-size: 2.8rem;
+    margin: 24px 0;
+}
+
+#Quick-list {
+    font-weight: 500;
+}
+
+#Features {
+    color: #FF900E;
+}
+
+.features-info {
+    margin-bottom: 32px;
+}
+
+
 /* responsive media query */
 @media screen and (max-width:576px) {
-    .navbar, .nav-link{
+
+    .navbar,
+    .nav-link,
+    .Team-section {
         flex-direction: column;
+    }
+
+    .teams-img-container {
+        grid-template-columns: 1fr;
+    }
+    .features-contaner{
+        margin-left: 20px;
+    }
+}
+
+/* medium device screen */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .Team-section{
+        flex-direction: column;
+    }
+    .features-contaner{
+        margin: 50px 20px;
     }
 }
