@@ -247,6 +247,21 @@ main>section {
 }
 
 /* responsive media query */
+
+/* footer */
+footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    background-color: #FFF4E7;
+    text-align: center;
+    margin-bottom: 216px;
+    border-radius: 8px;
+}
+.footer-info{
+    padding: 38px;
+}
+
 @media screen and (max-width:576px) {
 
     .navbar,
@@ -324,7 +339,8 @@ main>section {
         margin-top: 20px;
         padding: 45px 42px;
     }
-    .Experince-info-container{
+
+    .Experince-info-container {
         margin: 0 auto;
     }
 }
