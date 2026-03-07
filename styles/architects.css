@@ -25,6 +25,7 @@ body {
 .text-light-gray {
     color: #727272;
 }
+
 .section-title {
     font-size: 2.8rem;
     margin: 24px 0;
@@ -132,51 +133,61 @@ main>section {
 
 
 /* Experince related styles */
-.Experince{
+.Experince {
     gap: 140px;
 }
-.Experince-title{
+
+.Experince-title {
     font-size: 2.8rem;
     font-weight: 700;
     border-left: 5px solid #FF900E;
     padding-left: 20px;
     margin-bottom: 24px;
 }
-.Experince-info-container{
+
+.Experince-info-container {
     max-width: 586px;
 }
-.Experince-info{
+
+.Experince-info {
     margin-bottom: 30px;
 }
-.expertise{
+
+.expertise {
     padding: 30px;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 8px;
     box-shadow: 0px 4px 30px 0 rgba(0, 0, 0, 0.06);
     margin-top: 20px;
 }
-.expertise > h4{
+
+.expertise>h4 {
     font-size: 1.25rem;
     font-weight: 600;
     margin-top: 0;
     margin-bottom: 10px;
 }
-.expertise>p{
+
+.expertise>p {
     margin: 0;
 }
-.architect-lady{
+
+.features-architect img {
     width: 100%;
 }
-.badge{
-    margin-left: -77px;
-    margin-top: -123px;
-    padding: 45px;
+
+.badge {
+    margin-left: -100px;
+    margin-top: -100px;
+    padding: 45px 42px;
 }
-.badge-year{
+
+.badge-year {
     font-size: 4rem;
     font-weight: 700;
 }
-.badge-experince{
+
+.badge-experince {
     font-size: 1.5rem;
     font-weight: 500;
 }
@@ -184,11 +195,12 @@ main>section {
 
 /* some fact section */
 
-.facts-container{
+.facts-container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
-.fact-card{
+
+.fact-card {
     width: 240px;
     height: 240px;
     border: 1.5px solid #FF900E;
@@ -197,34 +209,40 @@ main>section {
     text-align: center;
     justify-content: center;
 }
-.fact-icon{
+
+.fact-icon {
     margin-bottom: 5px;
 }
-.fact-number{
+
+.fact-number {
     margin-top: 0;
     margin-bottom: 10px;
 }
-.fact-name{
+
+.fact-name {
     margin: 0;
 }
-.fact-decription{
+
+.fact-decription {
     max-width: 542px;
     margin-bottom: 100px;
 }
 
 /* Sponsors related styles */
-.sponsors-info{
-   max-width: 542px;
+.sponsors-info {
+    max-width: 542px;
     margin: 0 auto;
     text-align: center;
 }
-.sponsors-companies{
+
+.sponsors-companies {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     margin-top: 50px;
     margin-bottom: 130px;
 }
-.sponsors-companies img{
+
+.sponsors-companies img {
     filter: grayscale(100%);
 }
 
@@ -233,52 +251,80 @@ main>section {
 
     .navbar,
     .nav-link,
-    .Team-section {
+    .Team-section,
+    .Experince {
         flex-direction: column;
     }
 
-    .teams-img-container, .facts-container{
+    .teams-img-container,
+    .facts-container {
         grid-template-columns: 1fr;
     }
-    .features-contaner{
+
+    .features-contaner {
         margin-left: 20px;
     }
-    .facts-container{
+
+    .facts-container {
         justify-items: center;
         gap: 24px;
     }
+
     .fact-title,
-    .fact-decription{
+    .fact-decription {
         margin-left: 20px;
     }
-    .sponsors-companies{
+
+    .sponsors-companies {
         grid-template-columns: 1fr;
         justify-items: center;
         gap: 50px;
     }
+
+    .badge {
+        margin-left: 20px;
+        margin-top: 20px;
+        padding: 45px 42px;
+    }
+
 }
 
 /* medium device screen */
 
 @media screen and (min-width:576px) and (max-width:992px) {
-    .Team-section{
+
+    .Team-section,
+    .Experince {
         flex-direction: column;
     }
-    .features-contaner{
+
+    .features-contaner {
         margin: 50px 20px;
     }
+
     .sponsors-companies,
-    .facts-container{
-        grid-template-columns: repeat(2,1fr);
+    .facts-container {
+        grid-template-columns: repeat(2, 1fr);
         gap: 50px;
         justify-items: center;
     }
+
     .fact-title,
-    .fact-decription{
+    .fact-decription {
         margin: 10px auto;
         text-align: center;
     }
-    .fact-decription{
+
+    .fact-decription {
         margin-bottom: 50px;
+    }
+
+    .badge {
+        margin-left: 20px;
+        margin-top: 20px;
+        padding: 45px 42px;
+    }
+    .Experince-info-container{
+        margin: 0 auto;
     }
 }
